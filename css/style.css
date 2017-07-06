@@ -77,7 +77,7 @@ body{
 .container-photo h6{
   padding-bottom: 20px;
   font-family: 'Source Sans Pro', Monospace;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
   
 }
@@ -272,7 +272,8 @@ form .form-control {
 
 
 .img-thumbnail{
-  border:0; 
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
   width: 100vh ; 
   height: 25vh;
   box-sizing: border-box;
