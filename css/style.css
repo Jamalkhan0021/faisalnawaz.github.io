@@ -213,16 +213,14 @@ h4{
 
 .btn-master{
   background-color: #00F595;
-  border-radius: 0; 
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
   color: #000;
-  border-color: #fff;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', Monospace;
   height: 40px;
   width: 100%;
   text-decoration: none;
-
-  padding: 0;
  box-sizing: border-box;
 }
 .btn-master:hover{
