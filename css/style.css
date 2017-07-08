@@ -93,7 +93,10 @@ color: #fff;
 
  @media screen and (max-width:768px){
 
+
+
   .container-about{
+    background-image: url(../assets/back-about@1_2x.jpg);
     font-size: 1.2em;
    
     font-weight: 700;
@@ -400,10 +403,4 @@ figcaption h3{
 
 .fa-chevron-down:hover{
   font-weight: bolder;
-}
-hr {
-  clear: both;
-  background-color:#00F595
-  border:1px solid;
-
 }
