@@ -94,6 +94,12 @@ color: #fff;
  @media screen and (max-width:768px){
 
 
+  .container-welcome{
+    background-image: url(../assets/back-welcome@1-2x.jpeg);
+    
+  }
+
+
 
   .container-about{
     background-image: url(../assets/back-about@1_2x.jpg);
@@ -124,7 +130,8 @@ color: #fff;
 
  .container-projects h6{
 
-  padding-bottom: 20px;
+
+  padding-bottom: 10px;
   font-family: 'Source Sans Pro', Monospace;
   font-size: 3em;
   text-align: center;
@@ -178,6 +185,7 @@ color: #fff;
   margin-top: 20px;
   height: auto;
   width: 100%;
+
 }
 
 
@@ -210,6 +218,7 @@ color: #fff;
 
 
 .container-contact h6{
+
   font-size: 6vh;
   font-family: 'Source Sans Pro', Monospace;
 }
@@ -403,4 +412,11 @@ figcaption h3{
 
 .fa-chevron-down:hover{
   font-weight: bolder;
+}
+
+
+.cards-item{
+
+  
+
 }
