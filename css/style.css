@@ -1,40 +1,106 @@
-
+*{
+  box-sizing: border-box;
+}
 body{
-  background-color:#f2f2f2;
+  background-color:#eee;
   margin:0;
   padding: 0;
+  font-family:'Lato', Monospace;
+}
+
+.container-welcome{
+  
+  
+background-image: url(../assets/back-welcome.jpeg);
+color: #fff;
+  background-size: cover;
+  
+  
+  text-transform: capitalize;
+
+  
+  height: 100vh;
+  font-family: 'Source Sans Pro', Monospace;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.container-welcome button{
+  margin: 20px;
+  width: 200px;
 }
 
 
+.container-welcome p {
+
+  padding-top: 30%;
+  text-align: center;
+
+  clear: both;
+
+ font-size: 6vh;
+  font-family: 'Source Sans Pro', Monospace;
+
+}
+.container-welcome hr{
+
+
+  
+  clear: both;
+  
+  margin: 0px;
+  
+  border:1px solid #00F595;
+
+}
+
+.flex-items{
+  text-align:center;
+  
+
+} 
+
+
+
 .container-about{
-  background-color:#f4f4f4;
   
-  margin-top:0%;
-  height: 100vh;
+  background-image: url(../assets/back-about.jpg);
+  opacity: 0.9;
   
-  font-family:'Lato', Monospace;
+  
+  
+
+  background-size: cover;
+  color: #fff;
+  
+    height: 100vh;
+    
+  
+  font-family:'Source Sans Pro', Monospace;
   font-size: 1.3em;
    width: 100%;
   display: flex;
   align-items: center;
-  text-align: justify;
+  
   justify-content: center;
-  font-weight: 400;
+  font-weight: 700;
+  
   
  }
 
+
+
+
  @media screen and (max-width:768px){
- .container-about {
+
+  .container-about{
+    font-size: 1.2em;
    
+    font-weight: 700;
+    height: 100%;
     
-   background-color:#f6f6f6;
-   color:#000;
-  font-size: 3.5vw;
-   display: flex;
-  align-items: center;
-  justify-content: center;
-   
   }
+ 
 
   .jumbotron{
     margin-top:30px;
@@ -43,16 +109,13 @@ body{
  }
 
 
-#projects, #photography {
+.container-projects{
   
-  height: 50vh;
+  height: 80vh;
 }
 
  
 
-#contact{
-  background-color:#f4f4f4;
-}
 
 
 
@@ -88,9 +151,9 @@ body{
  @media screen and (max-width:768px){
 
 
-  #projects, #photography {
+  .container-projects {
   
-  height: 130vh;
+  height: auto;
   
 }
 
@@ -109,8 +172,9 @@ body{
   }
 
    .col-sm-4{
-  margin: 10px;
-  border-radius: 0px;
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
 }
 
 
@@ -124,12 +188,12 @@ body{
 
 .container-contact {
   
-  background-color:#f4f4f4;
+  
   color:#000;
   height: 50vh;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  
   
 }
 
@@ -150,11 +214,22 @@ body{
 
 @media screen and (max-width: 768px){
 
+/*
+  .img-thumbnail{
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  width: 100vh ; 
+  height: 50vh;
+  box-sizing: border-box;
+  
+}*/
+
+
   .container-contact {
   
-  background-color:#f4f4f4;
+  
   color:#000;
-  height: 100vh;
+  height: auto;
 
 
   display: flex;
@@ -177,11 +252,7 @@ body{
     margin-bottom: 0;
 }
 
-.flex-items{
-  text-align:center;
 
-} 
-  
 
 
 
@@ -214,11 +285,13 @@ h4{
 .btn-master{
   background-color: #00F595;
   border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  
   color: #000;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', Monospace;
-  height: 40px;
+  height: 50px;
   width: 100%;
   text-decoration: none;
  box-sizing: border-box;
@@ -252,7 +325,7 @@ form .form-control {
   border-bottom: 1px solid #d3d3d3;
   border-radius: 0;
   font-weight: 400;
-  margin-bottom: 15px; 
+   
   
 
 }
@@ -271,14 +344,11 @@ form .form-control {
 
 
 
-.img-thumbnail{
-  border-top-right-radius: calc(.25rem - 1px);
-  border-top-left-radius: calc(.25rem - 1px);
-  width: 100vh ; 
-  height: 25vh;
-  box-sizing: border-box;
-  
-}
+
+
+
+
+
 a:hover{
   text-decoration: none;
 }
@@ -292,4 +362,48 @@ p {
   font-size: 1.2em;
   font-family:'Lato', Monospace;
   
+}
+div > ul > li:hover{
+
+font-weight: 700;
+
+}
+
+.navbar-brand{
+  font-size: 2em;
+}
+
+.container-projects .img-thumbnail{
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  border:0;
+  width: 100%; 
+  height: 30vh;
+  box-sizing: border-box;
+}
+
+figcaption {
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  padding:  15px 30px 30px 15px;
+  background: #FFF;
+
+  border:0.0025rem solid #fff;
+  border-radius: .25rem;
+
+
+}
+figcaption h3{
+  font-weight: 700;
+  font-family: 'Source Sans Pro', Monospace;
+}
+
+.fa-chevron-down:hover{
+  font-weight: bolder;
+}
+hr {
+  clear: both;
+  background-color:#00F595
+  border:1px solid;
+
 }
