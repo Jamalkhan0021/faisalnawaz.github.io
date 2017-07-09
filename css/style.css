@@ -23,7 +23,7 @@ color: #fff;
   height: 100vh;
   font-family: 'Source Sans Pro', Monospace;
   word-wrap: break-word;
-  margin-bottom: 10px;
+  
 }
 
 
@@ -54,16 +54,17 @@ color: #fff;
 
 .container-about{
   
-  background-image: url(../assets/back-about.jpg);
-  opacity: 0.9;
+ 
+  background-color: #777;
+  
   
   
   
 
-  background-size: cover;
-  color: #fff;
+ 
+  color: #000;
   
-    height: 100vh;
+    height: auto;
     
   
   font-family:'Source Sans Pro', Monospace;
@@ -84,7 +85,6 @@ color: #fff;
   
           justify-content: center;
   font-weight: 500;
-
   
   
  }
@@ -103,7 +103,7 @@ color: #fff;
 
 
   .container-about{
-    background-image: url(../assets/back-about@1_2x.jpg);
+   /* background-image: url(../assets/back-about@1_2x.jpg);*/
     font-size: 1.2em;
    
     font-weight: 700;
@@ -112,9 +112,7 @@ color: #fff;
   }
  
 
-  .jumbotron{
-    margin-top:30px;
-  }
+  
 
  }
 
@@ -401,6 +399,7 @@ form .form-control {
   border-radius: 10px;
    font-family: 'lato', Monospace;
    pointer-events: none;
+    filter: drop-shadow(1px 1px 0px #888);
 }
 
 
@@ -491,8 +490,8 @@ figcaption h3{
  text-align: right;
  margin-bottom: 0;
   border:0;
-  border-top: 3px solid #ffffff;
-  width: 40%;
+  border-top: 3px solid #333;
+  width: 30%;
 }
 
 
@@ -576,4 +575,13 @@ hr.emblem-below::before{
   
 }
 
+}
+.navbar-default{
+  box-shadow: 0 10px 10px -10px;
+  background-color: #eee;
+}
+.jumbotron{
+
+  box-shadow: 0px 10px 10px -10px;
+  
 }
