@@ -27,6 +27,15 @@ body{
   
 }
 
+@media screen and (max-width: 728px){
+ 
+ .container-welcome{
+  background: #444 url(../assets/back-welcome-mobi.jpg);
+  background-size: cover;
+}
+
+}
+
 .container-welcome h2{
 
 
@@ -255,6 +264,11 @@ text-decoration: none;
   font-size: 1.5em;
  
 }
+
+.fa-chevron-down{
+  color: #fff;
+}
+
 .fa-chevron-down:hover{
   font-weight: bolder;
 }
