@@ -9,67 +9,47 @@ body{
   font-family:'lato', Monospace;
 }
 
+
+
+ /*Welcome page design starts*/
+
 .container-welcome{
   
   
-background-image: url(../assets/back-welcome.jpg);
-background-color: #444;
-color: #fff;
+  background: #444 url(../assets/back-welcome.jpg);
+  opacity: .9;
+  color: #fff;
   background-size: cover;
-  
-  
   text-transform: capitalize;
-
-  
   height: 100vh;
   font-family: 'Source Sans Pro', Monospace;
-  word-wrap: break-word;
+  
   
 }
 
-
-
-.container-welcome p {
+.container-welcome h2{
 
 
   padding-top: 30%;
   text-align: center;
-
-  
-
- font-size: 6vh;
+  font-size: 6vh;
   font-family: 'Source Sans Pro', Monospace;
-  filter: drop-shadow(2px 3px 1px #000);
+  -webkit-filter: drop-shadow(2px 3px 1px #000);
+          filter: drop-shadow(2px 3px 1px #000);
 
 }
+/*Welcome page design ends*/
 
 
-.flex-items{
-  text-align:center;
-   filter: drop-shadow(0.5px 0.5px 0.5px #333);
-  
-
-} 
-
-
+/*about page design starts*/
 
 .container-about{
   
- 
   background-color: #777;
-  
-  
-  
-  
-
- 
   color: #000;
+  height: auto;
   
-    height: auto;
-    
-  
-  font-family:'Source Sans Pro', Monospace;
-  font-size: 1.5em;
+  font-size: 1.2em;
    width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,48 +64,31 @@ color: #fff;
   
       -ms-flex-pack: center;
   
-          justify-content: center;
-  font-weight: 500;
+  justify-content: center;
+  
   
   
  }
 
+ .jumbotron{
 
-
-
- @media screen and (max-width:768px){
-
-
-  .container-welcome{
-    background-image: url(../assets/back-welcome@1-2x.jpg);
-    
-  }
-
-
-
-  .container-about{
-   /* background-image: url(../assets/back-about@1_2x.jpg);*/
-    font-size: 1.2em;
-   
-    font-weight: 700;
-    height: 100%;
-    
-  }
- 
-
-  
-
- }
-
-
-.container-projects{
-  
-  height:auto;
+   margin-top: 20px;
+   -webkit-box-shadow: 0 50px 50px -50px;
+           box-shadow: 0 50px 50px -50px;
 }
 
+.flex-items{
+   text-align:center;
+   -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #333);
+           filter: drop-shadow(0.5px 0.5px 0.5px #333);
+  
+
+} 
+
+ /*about page design ends*/
+
  
-
-
+/* Projects section design starts here*/
 
 
  .container-projects h6{
@@ -135,8 +98,9 @@ color: #fff;
   font-family: 'Source Sans Pro', Monospace;
   font-size: 3em;
   text-align: left;
-   filter: drop-shadow(1px 2px 1px #333);
-   margin-bottom: 100px;
+  -webkit-filter: drop-shadow(1px 2px 1px #333);
+          filter: drop-shadow(1px 2px 1px #333);
+  margin-bottom: 100px;
 
  }
 
@@ -144,81 +108,41 @@ color: #fff;
   
   
   display: -webkit-box;
-  
-  
   display: -ms-flexbox;
-  
-  
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-
-.container-photo h6{
-  padding-bottom: 20px;
-  font-family: 'Source Sans Pro', Monospace;
-  font-size: 2.5em;
-  text-align: center;
-  
+.container-projects .img-thumbnail{
+  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  border:0;
+  width: 100%; 
+  height: 25vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
+.cards-item{
 
+  -webkit-box-shadow: 0 10px 10px -10px;
 
-
- @media screen and (max-width:768px){
-
-
-  .container-projects {
-  
-  height: auto;
-  
-}
-
-
-
-
-
- 
-
-
-
-  .container-projects, .container-photo{
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
-   display:-webkit-box;
-   display:-ms-flexbox;
-   display:flex;
-  -webkit-box-align:center;
-      -ms-flex-align:center;
-          align-items:center;
-  }
-
-   .col-sm-4{
-  margin-top: 20px;
-  height: auto;
-  width: 100%;
+  box-shadow: 0 10px 10px -10px;
+  margin-bottom: 50px;
 
 }
 
+/*Projecs section design ends here*/
 
 
- }
-
-
-
-
-
+/*Contact section design starts here*/
 
 .container-contact {
   
   
   color:#000;
-
-
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,116 +151,66 @@ color: #fff;
       -ms-flex-align: center;
           align-items: center;
   
-  
-  
 }
 
-
-.container-contact p {
-
-  font-size: 1.2em;
-  font-family:'lato', Monospace;
-
-  
-}
 
 
 .container-contact h5{
-   text-align: left;
   font-size: 4em;
   font-family: 'Source Sans Pro', Monospace;
-  
-  color:  #999;
 }
 
 
-@media screen and (max-width: 768px){
 
-/*
-  .img-thumbnail{
-  border-top-right-radius: calc(.25rem - 1px);
-  border-top-left-radius: calc(.25rem - 1px);
-  width: 100vh ; 
-  height: 50vh;
-  box-sizing: border-box;
+form label{
+  text-transform: uppercase;
+  font-size: .8em;
+  font-family: 'Source Sans Pro', Monospace;
   
-}*/
-
-
-  .container-contact {
-  
-  
-  color:#000;
-  
-
-
-  display: -webkit-box;
-
-
-  display: -ms-flexbox;
-
-
-  display: flex;
-
-  -webkit-box-align: center;
-
-      -ms-flex-align: center;
-
-          align-items:center;
-
-  
-  }
-
 }
 
+form .form-control {
 
+  background-color: #fff;
+  border:0; 
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+/*Contact section design ends here*/
+
+
+
+
+
+
+/*navbar*/
 
 .navbar {
     margin-bottom: 0;
 }
 
+.navbar-brand{
+  font-family: 'Lobster Two', Monospace;
+  font-size: 2em;
+}
 
+div > ul > li:hover{
 
-
-
-
-.footer {
-  width: 100%;
-  height: 55px;
-  line-height: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #999;
-  color: #fff;
-  
-  font-weight: 400;
-  font-size: 12px;
-  font-family: 'Source Sans Pro', Monospace;
+font-weight: 700;
 
 }
 
 
 
-h4{
-  text-align: center;
-  padding-top: 20px;
-  font-family: 'Source Sans Pro', Monospace;
-  font-size: 2.4em;
-}
-
+/*Buttons*/
 
 .btn-master{
   background: -webkit-gradient(linear,right top, left top,from(#00F595),to(#00F5ff));
   background: -webkit-linear-gradient(right,#777,#888,#999,#aaa);
   background: -o-linear-gradient(right,#777,#888,#999,#aaa);
+  background: -webkit-gradient(linear,right top, left top,from(#777),color-stop(#888),color-stop(#999),to(#aaa));
   background: linear-gradient(270deg,#777,#888,#999,#aaa);
   border: 1px solid rgba(0,0,0,.125);
   border-top-right-radius: calc(.25rem - 1px);
@@ -360,47 +234,20 @@ border-radius: 0px;
 text-decoration: none;
 }
 
-
-#about-container .fa-2x{
+.fa-2x{
   margin: 5px;
   color: #222;
-  
-  filter: drop-shadow(0px 2px 0px #888);
-}
-#contact .fa-2x{
-margin: 5px;
-  color: #999;
-  
-  filter: drop-shadow(0px 2px 0px #888);
-
-}
-
-
-
-form label{
-  text-transform: uppercase;
-  font-size: .8em;
-  font-family: 'Source Sans Pro', Monospace;
-  color:  #999;
-
-}
-form .form-control {
-  font-family: 'lato', Monospace;
-  background-color: #fff;
-  border:0; 
-  border-bottom: 1px solid #d3d3d3;
-  border-radius: 0;
-  font-weight: 400;
-   
-  
-
+  -webkit-filter: drop-shadow(0px 2px 0px #888);
+          filter: drop-shadow(0px 2px 0px #888);
 }
 
 .btn-submit{
-  border-radius: 10px;
+  border-radius: 15px;
+  margin-top: 1px;
    font-family: 'lato', Monospace;
    pointer-events: none;
-    filter: drop-shadow(1px 1px 0px #888);
+    -webkit-filter: drop-shadow(1px 1px 0px #888);
+            filter: drop-shadow(1px 1px 0px #888);
 }
 
 
@@ -408,50 +255,40 @@ form .form-control {
   font-size: 1.5em;
  
 }
+.fa-chevron-down:hover{
+  font-weight: bolder;
+}
 
 
 
 
+/*content decoration*/
 
-
-
+a{
+  color: #000;
+}
 
 a:hover{
   text-decoration: none;
 }
 
-form {
-  margin: 5px;
-}
 
 p {
 
   font-size: 1.2em;
-  font-family:'lato', Monospace;
-  
-}
-div > ul > li:hover{
-
-font-weight: 700;
-
 }
 
-.navbar-brand{
-  font-family: 'Lobster Two', Monospace;
-  font-size: 2em;
+ h6 {
+
+  padding-left : 20px;
+  text-align: left;
+  font-family: 'Source Sans Pro', Monospace;
+  font-size: 3em;
+  color:  #999;
 }
 
-.container-projects .img-thumbnail{
-  border-top-right-radius: calc(.25rem - 1px);
-  border-top-left-radius: calc(.25rem - 1px);
-  border:0;
-  width: 100%; 
-  height: 30vh;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
-figcaption {
+figure {
   border-top-right-radius: calc(.25rem - 1px);
   border-top-left-radius: calc(.25rem - 1px);
   padding:  15px 30px 30px 15px;
@@ -465,26 +302,16 @@ figcaption {
 
 
 }
-figcaption h3{
+
+figure h3{
   font-weight: 700;
   font-family: 'Source Sans Pro', Monospace;
 }
 
-.fa-chevron-down:hover{
-  font-weight: bolder;
-}
 
 
-.cards-item{
 
-  -webkit-box-shadow: 0 10px 10px -10px;
-
-          box-shadow: 0 10px 10px -10px;
-          margin-bottom: 50px;
-
-}
-
-
+/*Emblem font awesome*/
 
 .emblem-upper{
   
@@ -527,17 +354,35 @@ hr.emblem-below::before{
 
 }
 
-#projects h6, #contact h6{
 
-  padding-left : 20px;
-  text-align: left;
+/*Footer*/
+
+.footer {
+  width: 100%;
+  height: 40px;
+  line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+  color: #222;
+  
+  font-weight: 700;
+  font-size: 12px;
   font-family: 'Source Sans Pro', Monospace;
-  font-size: 3em;
-  color:  #999;
-   
-   
 
- }
+}
+
+
+/*media quries*/
+
 @media screen and (max-width: 768px ){
 
 hr.emblem-below{
@@ -568,19 +413,12 @@ hr.emblem-below::before{
 
 }
 
-#projects h6, #contact h6{
+h6{
 
   
   text-align: center;
   padding: 0;
-  
-}
+  }
 
 
-
-
-.jumbotron{
-
-  box-shadow: 0px 10px 10px -10px;
-  
 }
