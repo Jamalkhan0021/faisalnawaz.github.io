@@ -6,7 +6,7 @@ body{
   background-color:#eee;
   margin:0;
   padding: 0;
-  font-family:'Lato', Monospace;
+  font-family:'lato', Monospace;
 }
 
 .container-welcome{
@@ -29,6 +29,7 @@ color: #fff;
 
 
 .container-welcome p {
+
 
   padding-top: 30%;
   text-align: center;
@@ -74,6 +75,8 @@ color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+
+
   
   -webkit-box-pack: center;
   
@@ -81,6 +84,7 @@ color: #fff;
   
           justify-content: center;
   font-weight: 500;
+
   
   
  }
@@ -232,17 +236,18 @@ color: #fff;
 .container-contact p {
 
   font-size: 1.2em;
-  font-family:'Lato', Monospace;
+  font-family:'lato', Monospace;
 
   
 }
 
 
 .container-contact h5{
-   text-align: center;
-  font-size: 7vh;
+   text-align: left;
+  font-size: 5vh;
   font-family: 'Source Sans Pro', Monospace;
-  filter: drop-shadow(1px 2px 1px #333);
+  
+  color:  #999;
 }
 
 
@@ -263,7 +268,7 @@ color: #fff;
   
   
   color:#000;
-  height: auto;
+  
 
 
   display: -webkit-box;
@@ -278,7 +283,7 @@ color: #fff;
 
       -ms-flex-align: center;
 
-          align-items: center;
+          align-items:center;
 
   
   }
@@ -310,7 +315,8 @@ color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F9F9F9;
+  background-color: #999;
+  color: #fff;
   
   font-weight: 400;
   font-size: 12px;
@@ -330,9 +336,9 @@ h4{
 
 .btn-master{
   background: -webkit-gradient(linear,right top, left top,from(#00F595),to(#00F5ff));
-  background: -webkit-linear-gradient(right,#00F595,#00F5ff);
-  background: -o-linear-gradient(right,#00F595,#00F5ff);
-  background: linear-gradient(270deg,#00F595,#00F5ff);
+  background: -webkit-linear-gradient(right,#777,#888,#999,#aaa);
+  background: -o-linear-gradient(right,#777,#888,#999,#aaa);
+  background: linear-gradient(270deg,#777,#888,#999,#aaa);
   border: 1px solid rgba(0,0,0,.125);
   border-top-right-radius: calc(.25rem - 1px);
   border-top-left-radius: calc(.25rem - 1px);
@@ -356,10 +362,18 @@ text-decoration: none;
 }
 
 
-.fa-2x, .fa-3x{
+#about-container .fa-2x{
   margin: 5px;
+  color: #222;
   
-  filter: drop-shadow(0px 2px 0px #333);
+  filter: drop-shadow(0px 2px 0px #888);
+}
+#contact .fa-2x{
+margin: 5px;
+  color: #999;
+  
+  filter: drop-shadow(0px 2px 0px #888);
+
 }
 
 
@@ -368,10 +382,11 @@ form label{
   text-transform: uppercase;
   font-size: .8em;
   font-family: 'Source Sans Pro', Monospace;
+  color:  #999;
 
 }
 form .form-control {
-  font-family: 'Lato', Monospace;
+  font-family: 'lato', Monospace;
   background-color: #fff;
   border:0; 
   border-bottom: 1px solid #d3d3d3;
@@ -384,7 +399,7 @@ form .form-control {
 
 .btn-submit{
   border-radius: 10px;
-   font-family: 'Lato', Monospace;
+   font-family: 'lato', Monospace;
    pointer-events: none;
 }
 
@@ -412,7 +427,7 @@ form {
 p {
 
   font-size: 1.2em;
-  font-family:'Lato', Monospace;
+  font-family:'lato', Monospace;
   
 }
 div > ul > li:hover{
@@ -422,6 +437,7 @@ font-weight: 700;
 }
 
 .navbar-brand{
+  font-family: 'Lobster Two', Monospace;
   font-size: 2em;
 }
 
@@ -469,42 +485,32 @@ figcaption h3{
 }
 
 
-hr.emblem:before{
- content:"\F121"; /* 203B Reference mark */
- font-family:fontawesome;
- display:inline-flex;
- 
- position:relative;
- top:-0.77em;
- right: -2em;
- padding:0 20px;
- font-size:2em;
 
-}
-.emblem{
+.emblem-upper{
   
  text-align: right;
  margin-bottom: 0;
   border:0;
   border-top: 3px solid #ffffff;
-  width: 65%;
+  width: 40%;
 }
 
 
-hr.emblem-portfolio{
+hr.emblem-below{
  
  text-align: right;
  margin-bottom: 0;
  position: relative;
- right: -4em;
+ top: -3.5em;
+ right: -15em;
  display:inline-block;
   border:0;
-  border-top: 4px solid #000000;
-  width: 85%;
+  border-top: 4px solid #999;
+  width: 80%;
 
 }
 
-hr.emblem-portfolio::before{
+hr.emblem-below::before{
 
  content:"\F121";
  font-family:fontawesome;
@@ -512,38 +518,41 @@ hr.emblem-portfolio::before{
  
  position:relative;
  top:-0.77em;
- right: -1.8em;
+ right: 0;
  padding:0 20px;
  font-size:3.5em;
+ color:  #999;
+ background-color: #eee;
 
 
 }
 
 #projects h6, #contact h6{
 
-  padding-right: 10px;
-  
+  padding-left : 20px;
+  text-align: left;
   font-family: 'Source Sans Pro', Monospace;
   font-size: 3em;
-  text-align: center;
-   filter: drop-shadow(1px 2px 1px #333);
+  color:  #999;
+   
    
 
  }
 @media screen and (max-width: 768px ){
 
-hr.emblem-portfolio{
+hr.emblem-below{
  
  text-align: right;
  
  position: relative;
+ top: 0;
  right: -2em;
  
   width: 80%;
 
 }
 
-hr.emblem-portfolio::before{
+hr.emblem-below::before{
 
  content:"\F121";
  font-family:fontawesome;
@@ -557,6 +566,14 @@ hr.emblem-portfolio::before{
  background-color: #eee;
 
 
+}
+
+#projects h6, #contact h6{
+
+  
+  text-align: center;
+  padding: 0;
+  
 }
 
 }
