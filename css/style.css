@@ -12,7 +12,8 @@ body{
 .container-welcome{
   
   
-background-image: url(../assets/back-welcome.jpeg);
+background-image: url(../assets/back-welcome.jpg);
+background-color: #444;
 color: #fff;
   background-size: cover;
   
@@ -38,7 +39,7 @@ color: #fff;
 
  font-size: 6vh;
   font-family: 'Source Sans Pro', Monospace;
-  filter: drop-shadow(1px 2px 1px #333);
+  filter: drop-shadow(2px 3px 1px #000);
 
 }
 
@@ -96,7 +97,7 @@ color: #fff;
 
 
   .container-welcome{
-    background-image: url(../assets/back-welcome@1-2x.jpeg);
+    background-image: url(../assets/back-welcome@1-2x.jpg);
     
   }
 
@@ -242,7 +243,7 @@ color: #fff;
 
 .container-contact h5{
    text-align: left;
-  font-size: 5vh;
+  font-size: 4em;
   font-family: 'Source Sans Pro', Monospace;
   
   color:  #999;
@@ -575,11 +576,9 @@ hr.emblem-below::before{
   
 }
 
-}
-.navbar-default{
-  box-shadow: 0 10px 10px -10px;
-  background-color: #eee;
-}
+
+
+
 .jumbotron{
 
   box-shadow: 0px 10px 10px -10px;
