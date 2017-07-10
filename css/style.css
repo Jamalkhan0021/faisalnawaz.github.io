@@ -8,7 +8,7 @@ body{
   margin:0;
   padding: 0;
   font-family:'lato', Monospace;
-  data-scroll-time = 0;
+  
 
 }
 
@@ -26,6 +26,7 @@ body{
   text-transform: capitalize;
   height: 100vh;
   font-family: 'Source Sans Pro', Monospace;
+
   
   
 }
@@ -82,11 +83,13 @@ body{
   
  }
 
- .jumbotron{
-   
+ .container-fluid .jumbotron{
+
+  color: #eee;
+   background-color: #555;
    margin:0;
-   -webkit-box-shadow: 0 10px 10px -10px;
-           box-shadow: 0 10px 10px -10px;
+   border-top-right-radius: 0;
+   border-top-left-radius: 0;
 }
 
 .flex-items{
@@ -264,9 +267,12 @@ text-decoration: none;
 
 .fa-2x{
   margin: 5px;
-  color: #222;
-  -webkit-filter: drop-shadow(0px 2px 0px #888);
-          filter: drop-shadow(0px 2px 0px #888);
+  color: #888;
+  
+}
+.fa-2x:hover{
+  font-weight: bolder;
+  color: #444;
 }
 
 .btn-submit{
@@ -461,8 +467,9 @@ h6{
 }
 
 .container-about{
-  background-color: #eee;
+  background-color: #555;
 }
+
 
 
 }
