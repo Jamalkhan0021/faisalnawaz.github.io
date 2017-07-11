@@ -3,7 +3,8 @@
           box-sizing: border-box;
 }
 body{
-  background:linear-gradient(#555,#666,#777,#888);
+  background:radial-gradient(#333,#888);
+
   background-color: #444;
   margin:0;
   padding: 0;
@@ -20,7 +21,7 @@ body{
   
   
   background: #444 url(../assets/back-welcome.jpg);
-  opacity: .7;
+  
   color: #fff;
   background-size: cover;
   
@@ -65,7 +66,7 @@ body{
   
   color: #000;
   height: auto;
-  opacity: 0.9;
+  
   
   font-size: 1.2em;
    width: 100%;
@@ -498,6 +499,9 @@ h6{
 .container-about{
   background-color: #555;
 
+}
+form{
+  margin-top: 50px;
 }
 
 
