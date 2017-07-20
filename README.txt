@@ -1,3 +1,3 @@
-Personal Portfiio
+Personal Portfolio
 
  
