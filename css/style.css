@@ -46,6 +46,7 @@ body{
 
  .container-welcome{
   background: #444 url(../assets/back-welcome-mobi.jpg);
+  background-attachment: fixed;
   background-size: cover;
 }
 
