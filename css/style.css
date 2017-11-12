@@ -67,7 +67,6 @@ main {
 
 main h1{
   
-  z-index: 2;
   position: relative;
   font: bold 300% Consolas, Monaco, monospace;
           width: 38ch;
@@ -88,10 +87,9 @@ main h1{
 }
 main h1{
   
-  z-index: 2;
   position: relative;
   font: bold 300% Consolas, Monaco, monospace;
-          width: 38ch;
+          width: 100%;
           white-space: normal;
           overflow: visible;
           border-right: none;
@@ -157,9 +155,8 @@ main h1{
 
  .flex-items{
    text-align:center;
+   z-index:2;
    margin-top: 10px;
-   -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #333);
-           filter: drop-shadow(0.5px 0.5px 0.5px #333);
 
 
 }
@@ -380,15 +377,24 @@ transition: all .7s;
 
 }
 
+@keyframes mymove {
+    0%   {top: 0px;}
+    50%  {top: 100px;}
+    100%  {top: 50px}
+}
+
 .fa-chevron-down{
-  color: #fff;
-  transition: all .1s;
+    position :relative;
+    margin-top:50px;
+    color: #fff;
+    animation: mymove 3s infinite;
+  
+
 }
 
 .fa-chevron-down:hover{
   font-weight: bolder;
   color: #444;
-  transform: translateY(10px);
 
 
 }
