@@ -7,7 +7,6 @@
 
 }
 body{
-  background:radial-gradient(#333,#888);
 
   background-color: #444;
   margin:0;
@@ -21,47 +20,91 @@ body{
 
  /*Welcome page design starts*/
 
-.container-welcome{
+main {
 
 
-  background: #444 url(../assets/back-welcome.jpg);
-  background-attachment: fixed;
-
+  
   color: #fff;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  text-transform: capitalize;
+  
   height: 100vh;
-
+  
+  background-color:#5C97FF;
   font-family: 'Source Sans Pro', sans-serif;
 
 
 
 }
+ 
+ main:before {
+         content: ' ';
+         display: block;
+         position: absolute;
+         left: 0;
+         top: 0;
+        width: 100%;                        
+        height: 100%;
+        z-index: 1;
+        opacity: 0.6;
+        background-image: url('../assets/background.jpeg');
+        background-size:cover;
+        background-attachment: fixed;
+       
+}
+
+
+@keyframes typing {
+        from { width: 0 }
+    }
+
+@keyframes caret {
+            50% { border-right-color: transparent; }
+        }
+
+
+
+main h1{
+  
+  z-index: 2;
+  position: relative;
+  font: bold 300% Consolas, Monaco, monospace;
+          width: 38ch;
+          white-space: nowrap;
+          overflow: hidden;
+          border-right: .05em solid;
+          animation: typing 8s steps(38,end),
+            caret 1s steps(1) infinite;
+}
+
 
 @media screen and (max-width: 728px){
-
- .container-welcome{
-  background: #444 url(../assets/back-welcome-mobi.jpg);
-  background-attachment: fixed;
-  background-size: cover;
+ main:before {
+        background-image: url('../assets/back-welcome-mobi.jpg');
+        background-size:cover;
+        background-attachment: fixed;
+       
+}
+main h1{
+  
+  z-index: 2;
+  position: relative;
+  font: bold 300% Consolas, Monaco, monospace;
+          width: 38ch;
+          white-space: normal;
+          overflow: visible;
+          border-right: none;
+          animation: none;
 }
 
-}
-
-.container-welcome p{
-
-
-  font-size: 4em;
-  font-family: 'Source Sans Pro', sans-serif;
-  -webkit-filter: drop-shadow(2px 3px 1px #000);
-          filter: drop-shadow(2px 3px 1px #000);
-
 
 }
+
+
+
+
+
 /*Welcome page design ends*/
 
 
