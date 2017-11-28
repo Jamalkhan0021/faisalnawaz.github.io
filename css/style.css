@@ -212,8 +212,9 @@ outline:0;
 height:2em;
 }
 
-
-
+.icon-1em{
+height:1em;
+}
 
  
 
@@ -379,42 +380,27 @@ flex-direction:column;
 /*footer start*/
 
 footer{
-display:grid;
+display:flex;
+align-items:flex-end;
+justify-content:center;
+text-align:center;
 background-color:#1a1d21;
-padding: 4em 2em 2em;
+padding: 4em 2em 0 2em;
 margin-top:200px;
-margin-bottom:0;
-grid-template-columns: repeat(3,1fr);
 color:#fff;
 border-top: 6px solid #ddd
 }
 
-footer svg{
-grid-row: 1;
-margin: 2em 0 5em -15vw;
-grid-column: 3;
-text-align:center;
-fill:#fff;
-stroke:#111;
-}
 
-footer .footer-notes{
-grid-row:2;
-grid-column:1/4;
-font-size:16px;
-}
-footer .footer-notes p:nth-child(1){
 
+
+footer h1{
+    font-size:1em;
     font-weight:600;
 
 }
 
-.social-link {
-grid-row:2;
-list-style:none;
-grid-column:12;
 
-}
 
 
 
