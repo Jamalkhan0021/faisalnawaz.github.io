@@ -69,7 +69,7 @@ svg:hover{
 
 #menu {
     height: 32px;
-    margin: 20px 15px 0 0;
+    margin: 10px 15px 0 0;
     border-radius: 8px;
     cursor: pointer;
     float:right;
@@ -86,10 +86,18 @@ text-align:center;
 font-weight:900;
 padding:0;
 line-height:3;
-display:none;
+display:block;
+max-height:0;
+overflow:hidden;
 background-color:#fff;
+transition: max-height 0.2s ease-out;
 }
-
+.onlink{
+max-height:200px;
+}
+nav,svg{
+height:50px;
+}
 
 }
 
@@ -104,7 +112,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  padding:0 2em; 
   height: 70vh;
   
   background-color:#5C97FF;
@@ -152,11 +160,11 @@ main h1{
   
   position: relative;
   font: bold 250% Consolas, Monaco, monospace;
-          width: 38ch;
+          width: 39ch;
           white-space: nowrap;
           overflow: hidden;
           border-right: .05em solid;
-          animation: typing 5s steps(38,end),
+          animation: typing 5s steps(39,end),
             caret 1s steps(1) infinite;
 }
 
@@ -193,18 +201,15 @@ outline:0;
 
 
 
-.fa-chevron-down{
+.fa-chevron-down {
     position :relative;
-    color: #fff;
     animation: mymove 3s infinite;
     margin-top:50px;
+    height:2em;
 }
 
-.fa-chevron-down:hover{
-  font-weight: bolder;
-  color: #444;
-
-
+.social{
+height:2em;
 }
 
 
@@ -222,7 +227,7 @@ outline:0;
     }
  main::after {
      height:100%;
-       
+     background-position:center; 
 }
 main h1{
   
@@ -411,11 +416,7 @@ grid-column:12;
 
 }
 
-.social-link i{
-   
-    padding-bottom:10px;
- 
-}
+
 
 a{
 color:inherit;
@@ -423,11 +424,6 @@ text-decoration:none;
 }
 
 
-
-
-.onlink{
-display:block;
-}
 
 
 

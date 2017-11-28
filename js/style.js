@@ -1,19 +1,18 @@
-var el = document.getElementById("menu");
-var i = 0;
+var navOn = document.getElementById("menu");
+var navigation = document.getElementById("navigation");
 
-el.addEventListener('click', function(){
-     var x = document.getElementById("navigation");
-     
-      if(i%2==0)  {
-       x.style.display = "block";
-        }
-
-        else{
-
-        x.style.display = "none";
-        
-        }
-
-   i++;
+navOn.addEventListener('click', function(){
+          
+  navigation.classList.toggle('onlink');
+       
 });
+
+
+navigation.addEventListener('click', function(){
+       navigation.classList.remove('onlink');        
+        
+
+
+});
+
 
